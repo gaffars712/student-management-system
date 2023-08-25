@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/student-management-system/static/css/main.0f434265.css",
-    "main.js": "/student-management-system/static/js/main.bf20378c.js",
+    "main.js": "/student-management-system/static/js/main.c11023e9.js",
     "static/media/instagram.png": "/student-management-system/static/media/instagram.ab23a7b63c4e66408b94.png",
     "static/media/gaffarphoto.jpg": "/student-management-system/static/media/gaffarphoto.463ba0a8d334d77ec177.jpg",
     "static/media/home.jpg": "/student-management-system/static/media/home.f56d22510d45376f74e4.jpg",
@@ -10,10 +10,10 @@
     "static/media/twiter.png": "/student-management-system/static/media/twiter.fa423a17b96931b9eb25.png",
     "index.html": "/student-management-system/index.html",
     "main.0f434265.css.map": "/student-management-system/static/css/main.0f434265.css.map",
-    "main.bf20378c.js.map": "/student-management-system/static/js/main.bf20378c.js.map"
+    "main.c11023e9.js.map": "/student-management-system/static/js/main.c11023e9.js.map"
   },
   "entrypoints": [
     "static/css/main.0f434265.css",
-    "static/js/main.bf20378c.js"
+    "static/js/main.c11023e9.js"
   ]
 }
