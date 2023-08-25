@@ -1,16 +1,21 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { deletestudent } from '../UserReduce';
 
 const Managestudent = () => {
+  const navigat = useNavigate()
   const useselect = useSelector((state) => state.users);
   const dispatch = useDispatch();
   
   const handledelet = (id) => {
     dispatch(deletestudent({id:id}));
   }
+  const handelclick = () =>{
+    alert("LogOut Secces")
+    navigat('/')
+}
 
   return (
     <>
@@ -57,7 +62,11 @@ const Managestudent = () => {
           </tbody>
         </table>
       </div>
-    </div></>
+      
+    </div>
+    <div style={{textAlign:"center",marginBottom:"2rem"}}>
+            <button style={{}} className='btn btn-danger' onClick={handelclick}>Logout</button>
+        </div></>
   );
 };
 
