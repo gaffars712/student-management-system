@@ -15,6 +15,8 @@ const Login = () => {
         element.preventDefault();
         if(email == 'admin@gmail.com' && password == 'admin'){
            history('/login/admindes')
+        }else if(email == 'student@gmail.com' && password == 'student'){
+            history('/login/studentlogin/')
         }
     //     try{
     //              axios.post('http://localhost:3000/',{

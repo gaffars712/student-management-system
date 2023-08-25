@@ -1,14 +1,20 @@
 import React, { useEffect, useState } from 'react';
 import { useSelector } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Admindes = () => {
+    const navigat = useNavigate();
 
   const useselect = useSelector((state) => state.users);
 
     useEffect(()=>{
         alert("Admin Login Success")
     },)
+
+    const handelclick = () =>{
+        alert("LogOut Secces")
+        navigat('/')
+    }
   return (
     <div style={{marginTop:"6rem", display: "", justifyContent: "",height:"100vh" }}>
      
@@ -73,6 +79,9 @@ const Admindes = () => {
                     </tr>
                 </table>
             </div>
+        </div>
+        <div style={{textAlign:"center"}}>
+            <button className='btn btn-danger' onClick={handelclick}>Logout</button>
         </div>
        
       </div>

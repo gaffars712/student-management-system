@@ -22,30 +22,30 @@ const Createstudent = () => {
 
     }
   return (
-    <div className='d-flex w-100 vh-100 justify-content-center align-items-center' style={{marginTop:'5rem'}}>
-      <div className='w-50 border bg-secondary text-white p-5'>
+    <div className='d-flex justify-content-center align-items-center' style={{marginTop:'5rem'}}>
+      <div className='w-80 w-md-50 border bg-secondary text-white p-5'>
         <h3>Add New Student</h3>
         <form onSubmit={handelsubmit}>
             <div>
                 <label htmlFor='name'>Name:</label>
-                <input onChange={(e)=>setname(e.target.value)} type='text' name='name' className='form-control'/>
+                <input required onChange={(e)=>setname(e.target.value)} type='text' name='name' className='form-control'/>
 
             </div>
             <div>
                 <label htmlFor='address'>Address:</label>
-                <input  onChange={(e)=>setaddress(e.target.value)} type="text"name='addres'className='form-control'  />
+                <input required onChange={(e)=>setaddress(e.target.value)} type="text"name='addres'className='form-control'  />
             </div>
             <div>
                 <label htmlFor='classes'>Class:</label>
-                <input  onChange={(e)=>setClass(e.target.value)} type="text"name='classs'className='form-control'  />
+                <input required onChange={(e)=>setClass(e.target.value)} type="text"name='classs'className='form-control'  />
             </div>
             <div>
                 <label htmlFor='age'>Age:</label>
-                <input  onChange={(e)=>setage(e.target.value)} type="text"name='age'className='form-control'  />
+                <input  required onChange={(e)=>setage(e.target.value)} type="text"name='age'className='form-control'  />
             </div>
             <div>
                 <label htmlFor='email'>Email:</label>
-                <input  onChange={(e)=>setemail(e.target.value)} type="email"name='email'className='form-control'  />
+                <input required onChange={(e)=>setemail(e.target.value)} type="email"name='email'className='form-control'  />
             </div><br></br>
             <button className='btn btn-info'>Create</button>
         </form>

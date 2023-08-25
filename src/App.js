@@ -10,6 +10,8 @@ import Createstudent from './Compunent/Createstudent';
 import { useEffect } from 'react';
 import { studentlist } from './Data';
 import Editstudent from './Compunent/Editstudent';
+import Studentdecs from './Compunent/Studentdecs';
+import Footer from './Compunent/Footer';
 
 function App() {
   useEffect(() => {
@@ -31,9 +33,11 @@ function App() {
       <Route path='/login/admindes/managestud' element={<Managestudent/>}></Route>
       <Route path='/login/admindes/managestud/createstud' element={<Createstudent/>}> </Route>
       <Route path='/login/admindes/managestud/editestud/:id' element={<Editstudent/>}></Route>
+      <Route path='/login/studentlogin/' element={<Studentdecs/>}></Route>
 
 
     </Routes>
+    <Footer/>
     </BrowserRouter>
    
     </>
