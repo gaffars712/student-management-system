@@ -1,10 +1,18 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Link } from 'react-router-dom';
+import { deletestudent } from '../UserReduce';
 
 const Managestudent = () => {
   const useselect = useSelector((state) => state.users);
+  const dispatch = useDispatch();
+  const handledelet =(id)=>{
+    dispatch(deletestudent({
+      id:id
+    }));
+
+  }
 
   return (<>
     <div className='container' style={{marginTop:"4rem", color:"black" , fontWeight:"bold" ,  fontSize:"2rem"}}> Student Details
@@ -38,8 +46,8 @@ const Managestudent = () => {
                   <td>{user.Class}</td>
                   <td>{user.age}</td>
                   <td>
-                    <button className='btn btn-sm btn-primary me-2 mb-2'>Edit</button>
-                    <button className='btn btn-sm btn-danger mb-2'>Delete</button>
+                    <Link to={`/login/admindes/managestud/editestud/${user.id}`} className='btn btn-sm btn-primary me-2 mb-2'>Edit</Link>
+                    <button onClick={()=>handledelet(user.id)} className='btn btn-sm btn-danger mb-2'>Delete</button>
                   </td>
                 </tr>
               ))}

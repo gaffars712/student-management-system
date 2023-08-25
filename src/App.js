@@ -9,6 +9,7 @@ import Managestudent from './Compunent/Managestudent';
 import Createstudent from './Compunent/Createstudent';
 import { useEffect } from 'react';
 import { studentlist } from './Data';
+import Editstudent from './Compunent/Editstudent';
 
 function App() {
   useEffect(() => {
@@ -29,6 +30,7 @@ function App() {
       <Route path='/login/admindes' element={<Admindes/>}></Route>
       <Route path='/login/admindes/managestud' element={<Managestudent/>}></Route>
       <Route path='/login/admindes/managestud/createstud' element={<Createstudent/>}> </Route>
+      <Route path='/login/admindes/managestud/editestud/:id' element={<Editstudent/>}></Route>
 
 
     </Routes>

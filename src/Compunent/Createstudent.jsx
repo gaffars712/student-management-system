@@ -47,7 +47,7 @@ const Createstudent = () => {
                 <label htmlFor='email'>Email:</label>
                 <input  onChange={(e)=>setemail(e.target.value)} type="email"name='email'className='form-control'  />
             </div><br></br>
-            <button className='btn btn-info'></button>
+            <button className='btn btn-info'>Create New</button>
         </form>
 
       </div>
