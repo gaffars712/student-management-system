@@ -1,0 +1,87 @@
+.logingpage{
+        background-color: white;
+};
+/* Base styles for larger screens */
+.loginPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .loginForm {
+    padding: 1.5rem;
+    width: 25%;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+  }
+  
+  /* Media query for smaller screens */
+  @media (max-width: 768px) {
+    .loginPage {
+      align-items: flex-start;
+      padding: 1rem;
+    }
+    
+    .loginForm {
+      width: 100%;
+      border: none;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    }
+  }
+  @media (max-width: 767px) {
+    .navbar-nav {
+      display: flex;
+      flex-direction: row;
+      
+    }
+    
+    .navbar-nav .nav-link {
+      margin-right: 15px; /* Add spacing between nav items */
+    }
+  }
+  .container {
+    margin-top: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px; /* Add padding to the container */
+  }
+  
+  .container55, .container44 {
+    flex: 1; /* Make both containers share equal width */
+    padding: 15px; /* Add padding to the individual containers */
+  }
+  
+  .container55 h1 {
+    margin-bottom: 10px; /* Add spacing below the heading */
+  }
+  
+  .container55 p {
+    margin-bottom: 15px; /* Add spacing below the paragraph */
+  }
+  
+  .container44 img {
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* For screens 767px and below (smartphone) */
+  @media (max-width: 767px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start; /* Align items to the left */
+    }
+  
+    .container55, .container44 {
+      width: 100%; /* Both containers take full width */
+    }
+  
+    .container55 {
+      margin-bottom: 20px; /* Add spacing between sections */
+    }
+  }
+  .text-primary:hover{
+    text-decoration-line: underline;
+
+  }
