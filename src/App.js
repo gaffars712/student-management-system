@@ -7,8 +7,17 @@ import Signup from './Compunent/Signup';
 import Admindes from './Compunent/Admindes';
 import Managestudent from './Compunent/Managestudent';
 import Createstudent from './Compunent/Createstudent';
+import { useEffect } from 'react';
+import { studentlist } from './Data';
 
 function App() {
+  useEffect(() => {
+    // Convert the array to a JSON string
+    const studentlistJSON = JSON.stringify(studentlist);
+
+    // Save the JSON string in local storage
+    localStorage.setItem('studentsData', studentlistJSON);
+  }, []);
   return (
     <>
     <BrowserRouter>

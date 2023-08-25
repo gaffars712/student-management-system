@@ -6,24 +6,25 @@ import { Link } from 'react-router-dom';
 const Managestudent = () => {
   const useselect = useSelector((state) => state.users);
 
-  return (
-    <div className='container'>
-      <div className='text-center mt-5'>
-        <h1>Student Details</h1>
-      </div>
-      <div className='d-flex justify-content-center mt-3'>
-        <Link to={'/login/admindes/managestud/createstud'}>
+  return (<>
+    <div className='container' style={{marginTop:"4rem", color:"black" , fontWeight:"bold" ,  fontSize:"2rem"}}> Student Details
+    
+    <Link to={'/login/admindes/managestud/createstud'}>
         <button to={'/login/admindes/managestud/createstud'} className='btn btn-success'>Create</button>
-        </Link>
-      </div>
-      <div className='mt-3'>
-        <div className='table-responsive'>
-          <table className='table table-bordered'>
+        </Link> </div>
+    <div className='container'>
+      
+      <div className='' style={{marginTop:"-2.5rem"}}>
+        <div className='table-responsive' style={{textAlign:"center" , margin:"auto", alignItems:"center"}}>
+          <table className='table table-bordered' style={{width:"100%"}}>
             <thead>
-              <tr>
+              <tr style={{textAlign:"center" , }}>
                 <th>ID</th>
                 <th>Name</th>
                 <th>Email</th>
+                <th>Addres</th>
+                <th>Class</th>
+                <th>Age</th>
                 <th>Action</th>
               </tr>
             </thead>
@@ -33,6 +34,9 @@ const Managestudent = () => {
                   <td>{user.id}</td>
                   <td>{user.name}</td>
                   <td>{user.email}</td>
+                  <td>{user.address}</td>
+                  <td>{user.Class}</td>
+                  <td>{user.age}</td>
                   <td>
                     <button className='btn btn-sm btn-primary me-2 mb-2'>Edit</button>
                     <button className='btn btn-sm btn-danger mb-2'>Delete</button>
@@ -43,7 +47,10 @@ const Managestudent = () => {
           </table>
         </div>
       </div>
-    </div>
+      <div>
+      
+      </div>
+    </div></>
   );
 };
 

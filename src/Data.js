@@ -1,16 +1,12 @@
 export const studentlist=[{
     name:'gaffar shaikh',
-    email : 'gaffargmail.com',
-    id:1
+    email : 'gaffar@gmail.com',
+    id:1,
+    address:'old state bank road khuldabad',
+    Class:'9th',
+    age:16,
+
 },
-{
-    name:' shaikh',
-    email : 'gaffargmail.com',
-    id:3
-},{
-    name:'gaffar ',
-    email : 'gaffargmail.com',
-    id:2
-},
+
 
 ]
