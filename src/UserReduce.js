@@ -22,7 +22,7 @@ const userSlice= createSlice({
 
         },
         deletestudent:(state,action)=>{
-            const {id}=action.payload;
+            const {id}=action.payload;  
             return state.filter(user=>user.id !== id);
             // if(updastu){
             //     return state.filter(f=>f.d !==id)

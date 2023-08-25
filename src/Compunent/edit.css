@@ -1,0 +1,24 @@
+/* Add this CSS code to your existing stylesheet or style tag */
+@media (max-width: 767px) {
+    .stylediv {
+      align-items: flex-start;
+    }
+    
+    .divetosdf {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    .w-50.border.p-5 {
+      padding: 20px;
+    }
+    
+    .form-control {
+      margin-bottom: 15px;
+    }
+    
+    .btn-info {
+      width: 100%;
+    }
+  }
+  
