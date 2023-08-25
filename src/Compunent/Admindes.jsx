@@ -1,7 +1,11 @@
 import React, { useEffect, useState } from 'react';
+import { useSelector } from 'react-redux';
 import { Link } from 'react-router-dom';
 
 const Admindes = () => {
+
+  const useselect = useSelector((state) => state.users);
+
     useEffect(()=>{
         alert("Admin Login Success")
     },)
@@ -15,8 +19,10 @@ const Admindes = () => {
     <br></br>
       <div style={{ marginTop:"-2rem",background:""}}>
         <h3 style={{paddingLeft:"3rem",color:"black", fontWeight:"bold"}}>Dashbord </h3>
-
-        <div style={{display:"flex",justifyContent:"space-evenly"}}>
+    
+        
+    
+        <div  style={{display:"flex",justifyContent:"space-evenly"}}>
             <div  style={{border :" 1px solid black",backgroundColor:"white",width:"18rem", marginTop:"0.8rem"}}> 
                 <h3 style={{color:"black",textAlign:"center", }}>Admin</h3>
                 <div>
@@ -30,7 +36,10 @@ const Admindes = () => {
                 <h3 style={{color:"black",textAlign:"center", }}>Studant's</h3>
                 <div>
                     <hr style={{color:"black", width:"",height:"20px"}}/>
-                    <p  style={{color:"black",textAlign:"center"}}>Total :- 100</p>
+                    
+                    <p   style={{color:"black",textAlign:"center"}}>
+                    Total :- {useselect.length} </p>
+                    
 
                 </div>
                 <div style={{margin:"auto", textAlign:"center"}}>
@@ -65,6 +74,7 @@ const Admindes = () => {
                 </table>
             </div>
         </div>
+       
       </div>
     </div>
   );
